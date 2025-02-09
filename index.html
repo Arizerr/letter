@@ -12,7 +12,7 @@
     <link rel="icon" href="icons/tab-icon.png"/>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body style="font-family: 'Comic Neue';" class="relative">
+<body style="font-family: 'Comic Neue'; background-color: pink;" class="relative">
 
     <!-- MUSIC PLAYER -->
     <div class="fixed left-6 bottom-6 z-10">
@@ -72,32 +72,6 @@
         </div>
     </div>
     
-    <!-- FOURTH -->
-    <div class="w-full h-[100vh] z-0 relative">
-        <!-- BACKGROUND -->
-        <img class="w-full h-full object-cover" src="img/back.jpg" alt="">
-        <div class="absolute top-0 w-full h-full flex justify-center items-center">
-            <!-- COUNTER -->
-            <div class="flex bg-neutral-100 gap-5 relative border-2 z-10 border-black flex-col px-5 pb-3 shadow-md pt-9 rounded-md">
-                <!-- DATE COUNTER -->
-                <div class="flex gap-5" id="myCountdown">
-                    <div class="bg-transparent border-2 border-black rounded-md w-40 h-52 flex justify-center items-center flex-col gap-10">
-                        <h1 id="years" class="text-6xl font-bold">0</h1>
-                        <p class="font-bold text-xl text-red-700">Year</p>
-                    </div>
-                    <div class="bg-transparent border-2 border-black rounded-md w-40 h-52 flex justify-center items-center flex-col gap-10">
-                        <h1 id="months" class="text-6xl font-bold">0</h1>
-                        <p class="font-bold text-xl text-red-700">Months</p>
-                    </div>
-                    <div class="bg-transparent border-2 border-black rounded-md w-40 h-52 flex justify-center items-center flex-col gap-10">
-                        <h1 id="days" class="text-6xl font-bold">0</h1>
-                        <p class="font-bold text-xl text-red-700">Days</p>
-                    </div>
-                </div>
-                <h1 class="text-center font-bold text-base">Since November 11, 2024</h1>
-            </div>
-        </div>
-    </div>
     <script>
         const envelope = document.querySelector('.envelope-wrapper');
         envelope.addEventListener('click', () => {
